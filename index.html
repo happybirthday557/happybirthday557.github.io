@@ -302,9 +302,9 @@ border-style: solid;"><div class="modal_content"><div class="esc-size-guide"><h5
     <br></div></div></div></div>
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     
-         <div class="parallax"> <img src="a4d52cef-3855-47e8-8e9f-e6e0552097f0.JPG" height="100%" >
+         <div class="parallax"> <img src="a4d52cef-3855-47e8-8e9f-e6e0552097f0.JPG" style="position:fixed; top:0px; left:0px; z-index:3; height:100%; width:100%;"  >
             
-             <p id="text" style="text-align:center; position:relative; z-index: 2">
+             <p id="text" style="text-align:center; position:relative; z-index: 3; top:1000px; ">
       <b>Happy Birthday Daddy!<br><br>
 May the Lord be with you in your endeavors, may you be healthy for the rest of your life, <br>and may you leave behind a lasting legacy! Thank you for being such a great daddy!
            <br>
@@ -312,9 +312,23 @@ May the Lord be with you in your endeavors, may you be healthy for the rest of y
           <b>                                                  But those who trust in the LORD will find new strength.They will soar high on wings like eagles. <br>They will run and not grow weary. They will walk and not be faint. (Isaiah 40:31)</b>
                   <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> 
         </p> </div>
-    
+          <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>  <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>  <div id="buttoms" style="position:fixed; bottom:0px; z-index:7;">
+           <button style="border-radius: 0px;
+        background-color: black; color: white; text-align:center; width:6vw;   height:4vh;right:33vw; margin:auto; position:absolute;" onclick="gogo();">Play</button> <button onclick="gogom();" style="border-radius: 0px;
+        background-color: black; color: white; text-align:center; width:6vw;   height:4vh;right:33vw; margin:auto; position:absolute;">Pause</button></div>
+          <div id="video" class="parallax" style="bottom:0; height:500px; position:relative; background-color:gold; "><video controls src="daddy.mp4?controls=1" id="boi"style="z-index:6;bottom:0px; position:relative; width:100vw; height:100vh;"></video> 
+       </div>
+         <br><br><br><br><br>
+   
         <script>
-            
+            function gogo(){
+                document.getElementById("boi").play();
+            }
+            function gogom (){ document.getElementById("boi").pause();}
+            function lolol(){
+                document.getElementById("xdd").fadeout(3000);
+                document.getElementById("video").style.display="initial";
+            }
 function playj(){var x = document.getElementById("myAudio"); 
 x.play();
     g.style.display="initial";
@@ -325,6 +339,7 @@ console.log(contents);
             $( document ).ready(function() {
 
                contents.fadeIn(500);
+                document.getElementById("boi").pause;
 
     
 });
@@ -334,7 +349,7 @@ console.log(contents);
          </script>
 
     
-         
+    </div>
     
 
 
